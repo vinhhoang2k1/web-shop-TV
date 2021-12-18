@@ -1,0 +1,132 @@
+
+:root {
+    --success-color: #0f9d58;
+    --textWhite-color: #fff;
+    --bg-color: #fff;
+}
+.container-fluid{
+    padding: 0;
+}
+#app{
+    /* max-width: 1366px;
+    margin: 0 auto; */
+    /* padding: 0px 9%; */
+}
+.wrapper{
+    width: 1500px;
+    margin: 0 auto;
+    content: "";
+}
+/* .carousel-control-next,
+.carousel-control-prev{
+    background-color: var(--success-color);
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    color: #fff;
+} */
+
+
+.navbar--fixed{
+    z-index: 999;
+    background-color: var(--bg-color);
+}
+.logo{
+
+}
+.menu{
+
+}
+
+ /* Navbar fixed  */
+.navbar--fixed .menu .nav-item {}
+
+.navbar--fixed .menu .nav-link{
+    color: #000;
+    font-size: 1.25rem;
+    padding: 20px 15px;
+}
+.navbar--fixed .menu .nav-link:hover{
+   color: var(--success-color);
+}
+
+.navbar--fixed  .menu > ul > li > a > i{
+    font-size: 1rem;
+}
+    /* Subnav */
+.navbar--fixed .menu .subnav__fullwhith,
+.navbar--fixed .menu  .subnav{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 999;
+    list-style: none;
+    width: 245px;
+    padding-left: 0;
+    box-shadow: 0 0 5px 1px rgb(0 0 0 / 15%);
+}
+.navbar--fixed .menu .subnav a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+
+.navbar--fixed  .menu .subnav__fullwhith{
+    left: 0;
+    width: 100%;
+}
+
+.navbar--fixed .menu .nav-item:hover .subnav__fullwhith{
+    display: flex;
+}
+.navbar--fixed .menu .nav-item:hover .subnav{
+    display: block;
+}
+.navbar--fixed > .menu .subnav a{
+    display: block;
+    color: #000;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar--fixed .subnav a:hover{
+    background-color: var(--success-color);
+    color: var(--textWhite-color);
+}
+
+
+/* Category */
+.category{
+    padding: 15px 0px;
+}
+
+.category .category--tags .tags--dd--btn{
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #eee;
+    padding: 10px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.category .category--search .search-dd-btn{
+    padding: 12px;
+    color: var(--textWhite-color);
+    background-color: var(--success-color);
+    border: none;
+    border-radius: 3px;
+}
+
+.category .category--search--dd .search--box input{
+    width: 85%;
+    padding: 11px;
+}
+.category .category--search--dd .search--box button{
+    padding: 13px 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--success-color);
+    color: var(--textWhite-color);
+    cursor: pointer;
+}
