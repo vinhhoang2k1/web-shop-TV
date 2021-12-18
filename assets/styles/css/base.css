@@ -1,0 +1,43 @@
+
+:root {
+    --primary-color:#0f9d58;
+    --gray: #888;
+
+    /* size */
+    --borderS:1px solid ;
+    --borderM:2px solid ;
+    --borderL:3px solid ;
+    --borderxl:4px solid ;
+
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+    
+}
+
+body {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    color: var(--primary-color);
+}
