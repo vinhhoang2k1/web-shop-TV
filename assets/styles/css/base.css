@@ -1,28 +1,21 @@
-
 :root {
-    --primary-color:#0f9d58;
+    --primary-color: #0f9d58;
     --gray: #888;
-
     /* size */
-    --borderS:1px solid ;
-    --borderM:2px solid ;
-    --borderL:3px solid ;
-    --borderxl:4px solid ;
-
-
+    --borderS: 1px solid;
+    --borderM: 2px solid;
+    --borderL: 3px solid;
+    --borderxl: 4px solid;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 html {
     scroll-behavior: smooth;
-
-    
 }
 
 body {
@@ -33,6 +26,7 @@ a {
     text-decoration: none;
     color: unset;
 }
+
 p {
     margin: 0;
     padding: 0;
@@ -40,4 +34,19 @@ p {
 
 .icon {
     color: var(--primary-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    color: #fff;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
 }
