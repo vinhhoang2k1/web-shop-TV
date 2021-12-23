@@ -6,6 +6,12 @@
     --borderM: 2px solid;
     --borderL: 3px solid;
     --borderxl: 4px solid;
+
+
+    --success-color: #0f9d58;
+    --textWhite-color: #fff;
+    --bg-color: #fff;
+    --box-shadow: 0 0 5px 3px rgb(0 0 0 / 15%);
 }
 
 * {
@@ -51,12 +57,6 @@ p {
     background-color: var(--primary-color);
 }
 
-:root {
-    --success-color: #0f9d58;
-    --textWhite-color: #fff;
-    --bg-color: #fff;
-    --box-shadow: 0 0 5px 1px rgb(0 0 0 / 15%);
-}
 .container-fluid{
     padding: 0;
 }
@@ -123,6 +123,9 @@ a{
     left: 0;
     width: 100%;
 }
+.navbar--fixed  .menu .subnav__fullwhith a{
+   display: block;
+}
 
 .navbar--fixed .menu .nav-item:hover .subnav__fullwhith{
     display: flex;
@@ -144,18 +147,23 @@ a{
     color: var(--textWhite-color);
 }
 
-/* Log in */
-.navbar--fixed .log-in {
-    text-align: right;
+/* User */
+.user{
+    display: flex;
+    justify-content: right;
 }
-.navbar--fixed .log-in .dropdown{
-    display: inline-block;
-    /* padding: 10px; */
+.user > div{
+    padding: 15px;
 }
-
-.navbar--fixed .log-in img{
-    max-width: 25px;
-    margin-left: 1rem;
+.user .dropdown .drop__btn{
+    background-color: var(--textWhite-color);
+    border: none;
 }
-
+.user .dropdown .dropdown-menu a:hover{
+    background-color: var(--success-color);
+    color: var(--textWhite-color);
+}
+.user .dropdown img{
+    width: 20px;
+}
 
