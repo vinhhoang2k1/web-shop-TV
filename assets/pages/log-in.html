@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../styles/css/base.css"> -->
+    <link rel="stylesheet" href="../styles/css/log-in.css">
 </head>
+
 <body>
-    
+    <div class="wrapper-login">
+        <div class="row login__section">
+            <div class="col-xl-6 col-sm-12 login__form">
+                <div>
+                    <h3 class="login__form__heading">Đăng nhập để không bỏ lỡ thông báo từ chúng tôi!</h3>
+                    <form action="">
+                        <div class="mb-3 mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="Tài khoản" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="pwd" placeholder="Mật khẩu" name="pswd">
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Lưu mật khẩu
+                                <a href="">Quên mật khẩu?</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn--submit form-control">Đăng nhập</button>
+
+                        <a href="" class="create-new">Tạo tài khoản</a>
+                        
+                    </form>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 login__decr">
+                <img src="../imgs/Logo/TVShop.png" alt="">
+                <p><i>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều thực phẩm nguyên chất hơn như: 
+                    trái cây, rau, protein nạc, ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, 
+                    hạn chế thực phẩm ăn nhanh đã qua chế biến, đồ ngọt và các loại thực phẩm đóng gói khác.
+                </i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

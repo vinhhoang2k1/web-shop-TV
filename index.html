@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/styles/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/styles/css/base.css">
     <link rel="stylesheet" href="./assets/styles/css/home.css">
+    <link rel="stylesheet" href="assets/styles/css/phone-fixed.css">
     
 
 </head>
@@ -33,7 +34,7 @@
                     <div class="col-xl-6 align-self-center  menu">
                         <ul class="nav">
                             <li class="nav-item">
-                                <a href="" class="nav-link">Trang chủ</a>
+                                <a href="index.html" class="nav-link">Trang chủ</a>
                             </li>
                             <li class="nav-item">
                                 <a href="" class="nav-link">Shop <i class="fas fa-angle-down"></i></a>
@@ -117,19 +118,19 @@
 
                                 <ul class="subnav">
                                     <li class="subnav--item">
-                                        <a href="" class="subnav--link">Blog</a>
+                                        <a href="assets/pages/blog.html" class="subnav--link">Blog</a>
                                     </li>
                                     <li class="subnav--item">
-                                        <a href="" class="subnav--link">Blog</a>
+                                        <a href="assets/pages/blog.html" class="subnav--link">Blog</a>
                                     </li>
                                     <li class="subnav--item">
-                                        <a href="" class="subnav--link">Blog</a>
+                                        <a href="assets/pages/blog.html" class="subnav--link">Blog</a>
                                     </li>
                                     <li class="subnav--item">
-                                        <a href="" class="subnav--link">Blog</a>
+                                        <a href="assets/pages/blog.html" class="subnav--link">Blog</a>
                                     </li>
                                     <li class="subnav--item">
-                                        <a href="" class="subnav--link">Blog</a>
+                                        <a href="assets/pages/blog.html" class="subnav--link">Blog</a>
                                     </li>
                                 </ul>
                             </li>
@@ -162,7 +163,7 @@
                                     <img src="assets/imgs/icons/User-icon.png" alt="">
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Log in</a></li>
+                                    <li><a class="dropdown-item" href="assets/pages/log-in.html" >Log in</a></li>
                                     <li><a class="dropdown-item" href="#">Sign up</a></li>
                                 </ul>
                             </div>
@@ -190,9 +191,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-7 category--search">
+                <div class="col-xl-9 category--search">
                     <div class="row category--search--dd">
-                        <div class="dropdown col-xl-2">
+                        <div class="col-xl-2  dropdown" style="display: inline-block;">
                             <button class="drop__btn dropdown-toggle tags--dd--btn search-dd-btn" type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Gợi ý
@@ -210,7 +211,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">Cart</div>
+                <div class="col-xl-1 shopping-cart">
+                    <a href="">
+                        <img src="assets/imgs/icons/cart.png" alt="">   
+                    </a>
+                    <span class="quantity">0</span>
+                </div>
             </div>
             <!-- End search products-->
 
@@ -220,13 +226,13 @@
                     <div class="owl-stage-outer">
                         <div class="owl-stage">
                             <div class="owl-item">
-                                <img src="assets/imgs/carousel/slide1.png" alt="">
+                                <img src="assets/imgs/carousel/slide2.png" alt="">
                             </div>
                             <div class="owl-item">
                                 <img src="assets/imgs/carousel/slide1.png" alt="">
                             </div>
                             <div class="owl-item">
-                                <img src="assets/imgs/carousel/slide1.png" alt="">
+                                <img src="assets/imgs/carousel/slide2.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -642,6 +648,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                
                             </div>
                         </div>
                     </div>
@@ -1128,6 +1136,26 @@
             </div>
             <!-- end branchs -->
         </div>
+
+
+        <!-- Start Phone icon fixed -->
+        <div class="hotline-phone-ring-wrap">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:19006262" class="pps-btn-img">
+                        <img src="assets/imgs/icons/phone-icon-fix.png" alt="Gọi điện thoại" width="50">
+                    </a>
+                </div>
+            </div>
+            <div class="hotline-bar">
+                <a href="tel:19006262">
+                    <span class="text-hotline">1900 6262</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Phone icon fixed -->
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>

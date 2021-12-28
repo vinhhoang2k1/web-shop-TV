@@ -164,6 +164,6 @@ a{
     color: var(--textWhite-color);
 }
 .user .dropdown img{
-    width: 20px;
+    max-width: 27px;
 }
 

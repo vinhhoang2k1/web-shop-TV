@@ -3,7 +3,7 @@
 // Scroll fixed navbar
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 500) {
+        if (window.scrollY > 350) {
             document.getElementById('navbar_top').classList.add('fixed-top');
             document.getElementById('navbar_top').style.boxShadow = " 0 0 5px 3px rgb(0 0 0 / 15%) ";
             // add padding top to show content behind navbar
