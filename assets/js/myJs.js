@@ -17,3 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+//detail
+const productCover = document.querySelector('.product-cover img')
+let productCoverATB = productCover.getAttribute('src')
+
+const productSlickImg = document.querySelectorAll('.product-slick-img');
+productSlickImg.forEach((item) => {
+    item.addEventListener('click', handleGetItem)
+    function handleGetItem(e) {
+        productCover.setAttribute('src', e.target.getAttribute('src'))
+    }
+})
+
+const setColor = document.querySelectorAll(".product-info .color span");
+setColor.forEach((item) => {
+    item.onclick = () => {
+        let curren = document.querySelector('.product-info .color span.active');
+        curren.classList.remove('active');
+        item.classList.add('active');
+    }
+} )
+
+

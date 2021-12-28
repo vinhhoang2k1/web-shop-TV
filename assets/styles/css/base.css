@@ -8,6 +8,19 @@
     --borderxl: 4px solid;
 }
 
+.orange  {
+    background-color: var(--bs-orange);
+}
+.blue {
+    background-color: var(--bs-blue);
+}
+.yellow {
+    background-color: var(--bs-yellow);
+}
+.cyan {
+    background-color: var(--bs-cyan);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -60,9 +73,7 @@ p {
 .container-fluid{
     padding: 0;
 }
-#app{
-    
-}
+
 .wrapper{
     width: 1500px;
     margin: 0 auto;
