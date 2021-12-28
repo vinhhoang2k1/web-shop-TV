@@ -1,0 +1,62 @@
+
+:root {
+    --primary-color: #0f9d58;
+    --gray: #888;
+    --success-color: #0f9d58;
+    --textWhite-color: #fff;
+    --bg-color: #fff;
+    --box-shadow: 0 0 5px 3px rgb(0 0 0 / 15%);
+}
+
+.wrapper-login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    /* position: relative; */
+    /* background-image: linear-gradient(90deg, #2afeb7, #08c792); */
+     /* background-image: linear-gradient(-45deg, #6cff95, #1e5246); */
+    background-image: linear-gradient(-45deg, #56a96d, #1e5246);
+}
+.login__section{
+    background-color: var(--bg-color);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 15px;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+.login__section > div {
+    margin: 0 auto;
+}
+.login__section .login__form > div {
+    width: 70%; 
+    margin: 0 auto;
+}
+.login__section .login__form .login__form__heading{
+    margin-bottom: 35px;
+}
+.login__section .login__form .btn--submit{
+    display: block;
+    padding: 15px 0px;
+    background-image: linear-gradient(-45deg, #56a96d, #1e5246);
+    color: var(--textWhite-color);
+}
+.login__section .login__form .btn--submit:hover{
+    box-shadow: 0 0 7px 5px rgb(0 0 0 / 15%);
+}
+
+.login__section .login__form .create-new{
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login__section .login__decr{
+    text-align: center;
+}
+.login__section .login__decr p{
+    /* max-width: 70%; */
+}
