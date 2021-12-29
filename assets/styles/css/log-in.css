@@ -40,6 +40,10 @@
 }
 .login__section .login__form .btn--submit{
     display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
     padding: 15px 0px;
     background-image: linear-gradient(-45deg, #56a96d, #1e5246);
     color: var(--textWhite-color);
