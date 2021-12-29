@@ -32,7 +32,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+*{
+    text-transform: none;
+}
 html {
     scroll-behavior: smooth;
 }

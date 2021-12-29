@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <title>Thanh toan</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/css/base.css">
-    <link rel="stylesheet" href="../styles/css/home.css">
-    <link rel="stylesheet" href="../styles/css/blog.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./../styles/css/base.css">
+    <link rel="stylesheet" href="./../styles/css/home.css">
+    <link rel="stylesheet" href="../styles/css/shopping-cart.css">
     <link rel="stylesheet" href="../styles/css/phone-fixed.css">
+
 </head>
 
 <body>
+
     <div id="app">
         <div class="container-fluid">
-            
             <!-- Navbar fixed -->
             <div class="navbar--fixed" id="navbar_top">
                 <div class="row  wrapper" style="position: relative;">
@@ -111,7 +116,7 @@
                                 <a href="" class="nav-link">Trưng bày</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">liên hệ</a>
+                                <a href="../pages/contact.html" class="nav-link">liên hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -192,126 +197,137 @@
             </div>
             <!-- End search products-->
 
-
-            <!-- Start blog  -->
-            <div class="wrapper-blog">
-                <div class="blog__heading">
-                    <h1>Blog</h1>
+            <!-- Start shopping-cart section  -->
+            <div class="wrapper-shopping-cart">
+                <div class="shopping-cart__heading">
+                    <h1>Thanh toán</h1>
                 </div>
+
                 <div class="wrapper">
-                    <div class="row blog__section">
+                    <div class="row shopping-cart__section">
+                        <div class="col-xl-7 col-sm-12 cart-prod">
+                            <h3>Tổng: <span>6</span></h3>
 
-                        <!-- Start blog post -->
-                        <div class="col-xl-8 blog__post">
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl1.jpg" alt="">
+                            <div class="cart-prod-item">
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="checkbox" id="check1" value="something">
                                 </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
+                                <div class="prod-img">
+                                    <img src="../imgs/products/whey1.png" alt="">
+                                </div>
+                                <div class="prod-decr">
+                                    <h5>Whey protein</h5>
+                                    <p>2.5kg</p>
+                                    <p>Cung cấp 25 gram Protein siêu cao cấp 100% Whey Protein Isolate mỗi khẩu phần.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl2.jpg" alt="">
+                                <div class="prod-icons">
+                                    <div class="quantity">
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="price">
+                                        <h5>500, 000 vnd</h5>
+                                    </div>
+
+                                    <div class="bin">
+                                        <img src="../imgs/icons/bin.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
+                            </div>
+
+                            <div class="cart-prod-item">
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="checkbox" id="check1" value="something">
+                                </div>
+                                <div class="prod-img">
+                                    <img src="../imgs/products/whey1.png" alt="">
+                                </div>
+                                <div class="prod-decr">
+                                    <h5>Whey protein</h5>
+                                    <p>2.5kg</p>
+                                    <p>Cung cấp 25 gram Protein siêu cao cấp 100% Whey Protein Isolate mỗi khẩu phần.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl3.jpg" alt="">
+                                <div class="prod-icons">
+                                    <div class="quantity">
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="price">
+                                        <h5>500, 000 vnd</h5>
+                                    </div>
+
+                                    <div class="bin">
+                                        <img src="../imgs/icons/bin.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
+                            </div>
+
+                            <div class="cart-prod-item">
+                                <div class="form-check" style="margin-left: 10px;">
+                                    <input class="form-check-input" type="checkbox" id="check1" value="something">
+                                </div>
+                                <div class="prod-img">
+                                    <img src="../imgs/products/whey1.png" alt="">
+                                </div>
+                                <div class="prod-decr">
+                                    <h5>Whey protein</h5>
+                                    <p>2.5kg</p>
+                                    <p>Cung cấp 25 gram Protein siêu cao cấp 100% Whey Protein Isolate mỗi khẩu phần.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl1.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
+                                <div class="prod-icons">
+                                    <div class="quantity">
+                                        <h5>1</h5>
+                                    </div>
+                                    <div class="price">
+                                        <h5>500, 000 vnd</h5>
+                                    </div>
+
+                                    <div class="bin">
+                                        <img src="../imgs/icons/bin.png" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl2.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
-                                </div>
-                            </div>
+
+                            
 
                         </div>
-                        <!-- Start blog post -->
+                        <div class="col-xl-5 col-sm-12 payment">
+                            <h3>Thanh toán</h3>
 
-                        <!-- Start blog sidebar  -->
-                        <div class="col-xl-4 blog__sidebar">
-                            <div class="search--box">
-                                <input type="text" placeholder="Search...">
-                                <button><i class="fas fa-search"></i></button>
+                            <div class="row price-pay">
+                                <div class="flex-container">
+                                    <div class="flex-item title"><h6>Tổng</h6></div>
+                                    <div class="flex-item number"><h6>500, 000 vnd</h6></div>
+                                </div>
+                                <div class="flex-container">
+                                    <div class="flex-item title"><h6>Phi van chuyen</h6></div>
+                                    <div class="flex-item number"><h6>0 vnd</h6></div>
+                                </div>
+                                <div class="flex-container">
+                                    <div class="flex-item title"><h6>Thành tiền</h6></div>
+                                    <div class="flex-item number"><h6>500, 000vnd</h6></div>
+                                </div>
                             </div>
-                            <ul class="sidebar__list">
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                            </ul>
-                        </div>
+                            <select class="form-select" aria-label="Default select example" style="margin-top: 25px;">
+                                <option selected>Chọn phương thức thanh toán</option>
+                                <option value="3">Thanh toán khi nhận hàng</option>
+                                <option value="1">Momo</option>
+                                <option value="2">Viettel money</option>
+                            </select>
 
-                        <!-- End blog sidebar  -->
+                            <div style="text-align: right;">
+                                <button class="btn-payment">Đặt hàng</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
+            <!-- End shopping-cart section  -->
+
         </div>
 
-        <!-- End blog  -->
 
         <!-- Start Phone icon fixed -->
         <div class="hotline-phone-ring-wrap">
@@ -334,8 +350,15 @@
     </div>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/myJs.js"></script>
+    <script src="../js/swiper.js"></script>
+
 </body>
 
 </html>

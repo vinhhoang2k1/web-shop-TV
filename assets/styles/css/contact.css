@@ -1,0 +1,59 @@
+
+:root {
+    --primary-color: #0f9d58;
+    --success-color: #0f9d58;
+    --textWhite-color: #fff;
+    --bg-color: #fff;
+    --box-shadow: 0 0 5px 3px rgb(0 0 0 / 15%);
+    --boxSha-hov: 0 0 7px 5px rgb(0 0 0 / 17%);
+    --bor-rad: 10px;
+}
+
+.wrapper-contact .contact__heading {
+    text-align: center;
+    color: var(--textWhite-color);
+    padding: 25px 0px;
+    /* background-image: linear-gradient(-45deg, #259557, #0cb58e); */
+    background-color: var(--success-color);
+}
+.contact__section {
+    padding: 35px 0px;
+}
+.contact__section .info-comp {
+    text-align: center;
+}
+.contact__section .info-comp .info__heading{
+    padding-bottom: 3rem;
+}
+.contact__section .info-comp .info-item{
+    border: 1px solid var(--success-color);
+    border-radius: .25rem;
+    padding: 20px 0px;
+}
+.contact__section .info-comp .info-item img{
+    max-width: 50px;
+}
+
+.contact-form{
+    padding: 2rem 0;
+}
+.contact-form .form-mess h4{
+    padding: 2rem 0;
+    text-align: center;
+}
+.contact-form .form-mess .submit-mess{
+    padding: 2rem;
+    text-align: right;
+}
+.contact-form .form-mess .submit-mess button{
+    padding: 5px 29px;
+    background-color: var(--success-color);
+    color: var(--textWhite-color);
+    border: none;
+    border-radius: .25rem;
+    font-size: 1.25rem;
+}
+.contact-form .form-mess .submit-mess button:hover{
+    box-shadow: 0 0 7px 5px rgb(0 0 0 / 15%);
+}
+

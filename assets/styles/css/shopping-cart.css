@@ -1,0 +1,90 @@
+
+:root {
+    --primary-color: #0f9d58;
+    --success-color: #0f9d58;
+    --textWhite-color: #fff;
+    --bg-color: #fff;
+    --box-shadow: 0 0 5px 3px rgb(0 0 0 / 15%);
+    --boxSha-hov: 0 0 7px 5px rgb(0 0 0 / 17%);
+    --bor-rad: 10px;
+}
+
+.wrapper-shopping-cart .shopping-cart__heading {
+    text-align: center;
+    color: var(--textWhite-color);
+    padding: 25px 0px;
+    /* background-image: linear-gradient(-45deg, #259557, #0cb58e); */
+    background-color: var(--success-color);
+}
+.shopping-cart__section {
+    margin-top: 15px;
+    padding: 35px;
+    border: 1px solid var(--success-color);
+    border-radius: .5rem;
+}
+.shopping-cart__section .cart-prod h3{
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--success-color);
+}
+.shopping-cart__section .cart-prod .cart-prod-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0;
+    align-items: center;
+}
+.cart-prod-item .prod-img{
+    flex: 10%;
+}
+.cart-prod-item .prod-decr{
+    flex: 35%;
+}
+.cart-prod-item .prod-icons{
+    flex: 40%;
+    display: flex;
+    align-items: center;
+}
+.cart-prod-item .prod-icons > div {
+    padding: 0 15px; 
+}
+.shopping-cart__section .cart-prod .cart-prod-item > div{
+    padding: 0 15px;
+}
+.cart-prod .cart-prod-item .prod-img img{
+    max-width: 125px;
+}
+.cart-prod .cart-prod-item .bin img{
+    max-width: 20px;
+}
+
+.shopping-cart__section .payment{
+    background-color: var(--success-color);
+    border-radius: .5rem;
+    color: var(--textWhite-color);
+    padding: 25px;
+    max-height: 335px;
+}
+.shopping-cart__section .payment h3{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.payment .flex-container{
+    display: flex;
+}
+.payment .flex-item{
+    flex: 45%;
+}
+.payment .number{
+    text-align: right;
+}
+.payment .btn-payment{
+    padding: 7px 15px;
+    margin-top: 25px;
+    border: none;
+    background-color: var(--bg-color);
+    border-radius: 3px;
+}
+
+.payment .btn-payment:hover{
+    box-shadow: 0 0 7px 5px rgb(0 0 0 / 15%);
+}
