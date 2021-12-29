@@ -31,7 +31,7 @@
     padding-bottom: 5rem;
   }
   .service {
-      border: var(--borderS) rgba(161, 161, 161, 0.2);
+    box-shadow: rgb(159 162 191 / 18%) 0px 19px 23px, rgb(159 162 191 / 32%) 0px 2px 5px;
       border-radius: 3px;
       padding: 20px;
   }
@@ -133,6 +133,7 @@
     border: 2px solid var(--primary-color);
     position: relative;
     padding: 20px;
+    box-shadow: rgb(159 162 191 / 18%) 0px 19px 23px, rgb(159 162 191 / 32%) 0px 2px 5px;
 }
 
 .deal-wrap__head {
@@ -291,7 +292,7 @@
 
 .category-product__wrap {
     width: 100%;
-    border: var(--borderS) rgb(211, 211, 211);
+    border: var(--borderS) rgb(233, 231, 231);
 }
 
 .swiper-wrapper.row {
@@ -441,6 +442,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgb(159 162 191 / 18%) 0px 19px 23px, rgb(159 162 191 / 32%) 0px 2px 5px;
+
 }
 
 .promotion__title {

@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
         if (window.scrollY > 350) {
             document.getElementById('navbar_top').classList.add('fixed-top');
-            document.getElementById('navbar_top').style.boxShadow = " 0 0 5px 3px rgb(0 0 0 / 15%) ";
+            document.getElementById('navbar_top').style.boxShadow = "rgb(159 162 191 / 18%) 0px 19px 23px, rgb(159 162 191 / 32%) 0px 2px 5px";
             // add padding top to show content behind navbar
             navbar_height = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = navbar_height + 'px';
@@ -38,6 +38,8 @@ setColor.forEach((item) => {
         curren.classList.remove('active');
         item.classList.add('active');
     }
-} )
+})
+
+
 
 
