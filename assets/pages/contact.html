@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <title>Liên hệ</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/css/base.css">
-    <link rel="stylesheet" href="../styles/css/home.css">
-    <link rel="stylesheet" href="../styles/css/blog.css">
+    <link rel="stylesheet" href="../styles/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./../styles/css/base.css">
+    <link rel="stylesheet" href="./../styles/css/home.css">
+    <link rel="stylesheet" href="../styles/css/contact.css">
     <link rel="stylesheet" href="../styles/css/phone-fixed.css">
+
 </head>
 
 <body>
+
     <div id="app">
         <div class="container-fluid">
-            
             <!-- Navbar fixed -->
             <div class="navbar--fixed" id="navbar_top">
                 <div class="row  wrapper" style="position: relative;">
@@ -111,7 +116,7 @@
                                 <a href="" class="nav-link">Trưng bày</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">liên hệ</a>
+                                <a href="../pages/contact.html" class="nav-link">liên hệ</a>
                             </li>
                         </ul>
                     </div>
@@ -192,126 +197,89 @@
             </div>
             <!-- End search products-->
 
-
-            <!-- Start blog  -->
-            <div class="wrapper-blog">
-                <div class="blog__heading">
-                    <h1>Blog</h1>
+            <!-- Start contact section  -->
+            <div class="wrapper-contact">
+                <div class="contact__heading">
+                    <h1>Liên hệ</h1>
                 </div>
+
                 <div class="wrapper">
-                    <div class="row blog__section">
-
-                        <!-- Start blog post -->
-                        <div class="col-xl-8 blog__post">
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl1.jpg" alt="">
+                    <div class="contact__section">
+                        <div class="info-comp">
+                            <h3 class="info__heading">Chúng tôi luôn sẵn sàng phục vụ 24/7</h3>
+                            <div class="row info-content">
+                                <div class="col-xl-4">
+                                    <div class="info-item">
+                                        <img src="../imgs/icons/home-icon.png" alt="">
+                                        <h5>Địa chỉ</h5>
+                                        <p>ĐẠI HỌC CÔNG NGHỆ ĐÔNG Á</p>
+                                        <p>Toà Nhà Polyco, Trịnh Văn Bô, Nam Từ Liêm, Hà Nội</p>
+                                    </div>
                                 </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
+                                <div class="col-xl-4">
+                                    <div class="info-item">
+                                        <img src="../imgs/icons/phone-icon-cont.png" alt="">
+                                        <h5>Điện thoại</h5>
+                                        <p>Mobile: +84 24 6262 7797</p>
+                                        <p>Hotline: 1900 6262</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl2.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
+                                <div class="col-xl-4">
+                                    <div class="info-item">
+                                        <img src="../imgs/icons/email-icon.png" alt="">
+                                        <h5>Email</h5>
+                                        <p>khoacntt@eaut.edu.vn</p>
+                                        <p>khoacntt@eaut.edu.vn</p>
+                                        <p></p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl3.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl1.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row blog__post__item">
-                                <div class="col-xl-3 post__img">
-                                    <img src="../imgs/blog/bl2.jpg" alt="">
-                                </div>
-                                <div class="col-xl-9  post__content">
-                                    <h5>Thursday, December 23, 2021</h5>
-                                    <p>Các nguyên tắc cơ bản của eat clean sẽ khuyến khích bạn tiêu thụ nhiều
-                                        thực phẩm nguyên chất hơn như: trái cây, rau, protein nạc,
-                                        ngũ cốc nguyên hạt và chất béo lành mạnh và đồng thời, hạn chế thực phẩm ăn
-                                        nhanh đã qua chế biến,
-                                        đồ ngọt và các loại thực phẩm đóng gói khác.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Start blog post -->
-
-                        <!-- Start blog sidebar  -->
-                        <div class="col-xl-4 blog__sidebar">
-                            <div class="search--box">
-                                <input type="text" placeholder="Search...">
-                                <button><i class="fas fa-search"></i></button>
-                            </div>
-                            <ul class="sidebar__list">
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                                <li>
-                                    <a href="">#Sinhtobo</a>
-                                </li>
-                            </ul>
                         </div>
 
-                        <!-- End blog sidebar  -->
+                        <div class="row contact-form">
+                            <div class="col-xl-6 map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8168144215447!2d105.73976961540247!3d21.040014492768737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135096b31fa7abb%3A0xff645782804911af!2zVHLGsOG7nW5nIMSR4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgxJDDtG5nIMOB!5e0!3m2!1svi!2s!4v1640708450169!5m2!1svi!2s"
+                                    width="100%" height="450" style="border:0;" allowfullscreen=""
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+
+                            <div class="col-xl-6 form-mess">
+                                <h4>Sự góp ý của bạn giúp chúng tôi hoàn thiện hơn!</h4>
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Ho ten" >
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="phone"
+                                            placeholder="So dien thoai" >
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="phone"
+                                            placeholder="Email" >
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Ban muon nhan gi ?"></textarea>
+                                    </div>
+                                    
+                                    <label for="filename">Tai anh len</label>
+                                    <input type="file" id="myFile" name="filename">
+                                    <div class="submit-mess">
+                                        <button type="submit" class="btn-submit">Gui</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- End contact section  -->
+
         </div>
 
-        <!-- End blog  -->
 
         <!-- Start Phone icon fixed -->
         <div class="hotline-phone-ring-wrap">
@@ -334,8 +302,15 @@
     </div>
 
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/carousel.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/myJs.js"></script>
+    <script src="../js/swiper.js"></script>
+
 </body>
 
 </html>
