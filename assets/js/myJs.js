@@ -1,4 +1,17 @@
+// Btn Back to top 
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+        document.getElementById("btn-back-to-top").style.display = "block";
+    } else {
+        document.getElementById("btn-back-to-top").style.display = "none";
+    }
+}
 
+document.getElementById('btn-back-to-top').addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
 
 // Scroll fixed navbar
 document.addEventListener("DOMContentLoaded", function () {
